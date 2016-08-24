@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="query_suggestions">
+        <item>An2droid</item>
+        <item>iOS</item>
+        <item>SCALA</item>
+        <item>Ruby</item>
+        <item>JavaScript</item>
+        <item>Android2</item>
+        <item>iOS2</item>
+        <item>SCALA2</item>
+        <item>Ruby2</item>
+        <item>Ja2vaScript2</item>
+    </string-array>
+</resources>
