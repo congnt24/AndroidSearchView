@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.EditText;
 
+import com.miguelcatalan.materialsearchview.FloatingSearchView;
 import com.miguelcatalan.materialsearchview.MaterialSearchView;
 import com.miguelcatalan.materialsearchview.OnSearchViewFocusListener;
 import com.miguelcatalan.materialsearchview.OnSearchViewListener;
@@ -12,7 +13,7 @@ import com.miguelcatalan.materialsearchview.OnSearchViewListener;
 
 public class MainActivity extends AppCompatActivity {
 
-    private MaterialSearchView mSearchView;
+    private FloatingSearchView mSearchView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,8 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 //        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 //        setSupportActionBar(toolbar);
-        mSearchView = (MaterialSearchView) findViewById(R.id.search_view);
-        mSearchView.setSearchViewType(false);
+        mSearchView = (FloatingSearchView) findViewById(R.id.search_view);
         mSearchView.setVoiceSearch(true); //or false
         mSearchView.setSuggestions(getResources().getStringArray(R.array.query_suggestions));
         mSearchView.setOnSearchViewListener(new OnSearchViewListener() {
